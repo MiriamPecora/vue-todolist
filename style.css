@@ -100,6 +100,10 @@ h2 {
     font-weight: bold;
 }
 
+.done {
+    text-decoration: line-through;
+}
+
 .cross {
     color: rgb(170, 5, 5);
     background-color: rgb(255, 255, 255);

@@ -22,4 +22,12 @@ MILESTONE 1
 -Su html, usare un v-for per stampare in pagina un item per ogni todo
 -Aggiungere una variabile con proprietà 'true' o 'false' e in base a quello visualizzare il testo sbarrato
 MILESTONE 2
-
+-Aggiungere un bottone raffigurante una x per rimuovere il todo dalla lista
+MILESTONE 3
+-Creare un input di testo
+-Creare un bottone "aggiungi"
+-Al click del bottone, il testo digitato dall'utente verrà letto e utilizzato per creare un nuovo todo
+BONUS 1
+-Al click del pulsante ENTER, aggiungere il testo digitato alla lista todo
+BONUS 2
+-Al click del testo dell'item, il valore della proprietà 'done' subirà uno switch
