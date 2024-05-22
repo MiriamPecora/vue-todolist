@@ -16,7 +16,9 @@ createApp({
         };
     },
     methods: {
-        
+        deleteItem(index){ 
+            this.list.splice(index, 1);
+        }
     },
     mounted() {
         

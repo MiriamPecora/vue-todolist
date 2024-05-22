@@ -39,7 +39,7 @@ main {
 
 /* BOTTONI PRIMA SEZIONE */
 
-#btns {
+.btns {
     background-color: rgb(255, 255, 255);
     padding: 15px 60px;
     border: none;
