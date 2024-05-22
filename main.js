@@ -13,11 +13,18 @@ createApp({
                     done: false,
                 },
             ],
+            newTodo: "",
         };
     },
     methods: {
         deleteItem(index){ 
             this.list.splice(index, 1);
+        },
+        addTask(){
+            this.list.push({
+                text: this.newTodo,
+                done: false,
+            });
         }
     },
     mounted() {

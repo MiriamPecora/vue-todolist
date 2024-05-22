@@ -17,8 +17,9 @@
 
         <div class="btns">
 
-            <button class="btn_general" id="btn1">Add Task</button>
-
+            <input v-model="newTodo" class="btn_general" type="text">
+            <button @click="addTask()" class="btn_general" id="btn1">Add Task</button>
+            
         </div>
 
         <div id="lists">
