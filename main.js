@@ -6,7 +6,7 @@ createApp({
             list: [
                 {
                     text: 'sono una nuova task',
-                    done: true,
+                    done: false,
                 },
                 {
                     text: 'sono una nuova task',
@@ -25,7 +25,11 @@ createApp({
                 text: this.newTodo,
                 done: false,
             });
-        }
+            this.newTodo = '';
+        },
+        isItDone(index) {
+            this.list[index].done = !this.list[index].done;
+        },
     },
     mounted() {
         

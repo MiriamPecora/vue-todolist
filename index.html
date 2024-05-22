@@ -17,8 +17,8 @@
 
         <div class="btns">
 
-            <input v-model="newTodo" class="btn_general" type="text">
-            <button @click="addTask()" class="btn_general" id="btn1">Add Task</button>
+            <input v-model="newTodo" class="btn_general" type="text" @keyup.enter="addTask()" id="inputTask">
+            <button  @click="addTask()" class="btn_general" id="btn1">Add Task</button>
             
         </div>
 
@@ -26,8 +26,8 @@
 
             <h2>&#9207; New Task</h2>
             <ul v-for="(item, index) in list"> 
-                <li :class="{ done: item.done}">
-                    <span>{{ item.text }}</span>
+                <li>
+                    <span :class="{ done: item.done }" @click="isItDone(index)">{{ item.text }}</span>
                     <button @click="deleteItem(index)" class="btns" style="color: rgb(207, 8, 8);">&#10005;</button>
                 </li>
             </ul>
